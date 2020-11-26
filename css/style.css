@@ -1,0 +1,151 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box;
+}
+html, body{
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    background: #6ac7cd;
+}
+.msg{
+    width: 100%;
+    margin: 5px auto;
+    padding: 8px;
+    border-radius: 5px;
+    list-style: none;
+    }
+    .success{
+    color: green;
+    border: 1px solid green;
+    background: lightgreen;
+    }
+    .error{
+    color: red;
+    border: 1px solid red;
+    background: rgb(245, 178, 178);
+    }
+header{
+    height: 60px;
+    width: 100%;
+    }
+header h1{
+    text-align: center;
+    font-family: 'candal';
+    color: #132526;
+}
+header ul{
+    float: right;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+header ul li ul{
+    background: #6ac7cd;
+    position: absolute;
+    top: 60px;
+    right: 0px;
+    width: 180px;
+    display: none;
+    z-index: 88888;
+}
+header ul li ul li{
+    background: #6ac7cd;
+    width: 100%;
+}
+header ul li ul li a{
+    padding: 10px;
+}
+header ul li ul li a.logout {
+    color: red;
+}
+header ul li ul li a:hover {
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    font-family: 'Helvetica';
+}
+a:active{
+  background: #1e64ce;  
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.btn{
+    padding: .5rem 1rem;
+    background: #1e64ce;
+    color: #fff;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    font-size: 1.08em;
+    font-family: 'lora', 'serif';
+}
+.btn:hover{
+    background: #0446aa;
+}
+.btn-big{
+    padding: .7rem 1.3rem;
+    line-height: 1.3rem;
+    width: 100%;
+    font-size: 1.3em;
+}
+
+.auth-content{
+    width: 40%;
+    margin: 50px auto;    /* //to centralize the form */
+    padding: 30px;
+    border-radius: 10px;
+}
+.auth-content .form-title{
+    font-family: 'candal';
+    text-align: center;
+    padding: 10px;
+}
+.auth-content form div{
+    margin-bottom: 25px;
+}
+.auth-content form p{
+    text-align: center;
+}
+.auth-content form p a:hover{
+    color: #02409c;
+    font-style: italic;
+}
+.text-input{
+    padding: .7rem 1rem;
+    display: block;
+    border-radius: 7px;
+    width: 100%;
+    outline: none;
+    line-height: 1rem;
+    font-size: 1.2rem;
+    border: 1px solid white;
+}
+
+::placeholder{
+text-align: center;
+font-size: 1rem;
+}
+label{
+    font-size: 1.3rem;
+    padding-top: 0px;
+}
+@media only screen and (max-width: 934px){
+    .auth-content{
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 750px){
+    .auth-content{
+        width: 60%;
+    }
+}
+@media only screen and (max-width: 600px){
+    .auth-content{
+        width: 90%;
+    }
+  
+}
